@@ -1,0 +1,344 @@
+/* 全局基础重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / 375 * 10);
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+  background-color: #f5f7fa;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* 导航栏样式 */
+<style>
+.navbar {
+  display: flex; /* 启用弹性布局 */
+  justify-content: space-around; /* 让所有导航项沿主轴均匀分布，两侧也留均等间距 */
+  align-items: center; /* 垂直方向居中对齐文字 */
+  background-color: #4a7c39; /* 匹配图中的深绿色导航背景 */
+  padding: 20px 10px;
+}
+.nav-item {
+  font-size: 48px; /* 匹配图中大字号的浅色文字效果 */
+  color: #f0f0d8;
+}
+
+
+
+
+
+.logo {
+  color: #e76f51;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: #f1faee;
+  font-size: 2.8rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #e76f51;
+}
+
+/* 横幅样式 */
+.banner {
+  width: 100%;
+  padding: 12rem 4rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 5.2rem;
+  margin-bottom: 2rem;
+}
+
+.banner p {
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  opacity: 0.9;
+}
+
+.banner-btn {
+  padding: 2.4rem 6rem;
+  font-size: 3rem;
+  border: none;
+  border-radius: 5rem;
+  background-color: #e76f51;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.banner-btn:hover {
+  transform: scale(1.05);
+}
+
+/* 板块标题样式 */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem 2rem;
+}
+
+.title-line {
+  width: 0.8rem;
+  height: 4rem;
+  background-color: #e76f51;
+  border-radius: 1rem;
+}
+
+.section-title h2 {
+  font-size: 3.6rem;
+  color: #222;
+}
+
+/* 资讯卡片样式 */
+.news-card {
+  margin: 2rem;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s;
+}
+
+.news-card:hover {
+  box-shadow: 0 0.6rem 2rem rgba(0,0,0,0.1);
+}
+
+.news-card h3 a {
+  font-size: 3.2rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.news-meta {
+  font-size: 2.4rem;
+  color: #999;
+  margin: 1.5rem 0;
+}
+
+.news-desc {
+  font-size: 2.8rem;
+  color: #666;
+}
+
+/* 大屏端适配规则 */
+@media (min-width: 750px) {
+  html {
+    font-size: 18px;
+  }
+  body {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}/* 全局基础重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / 375 * 10);
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+  background-color: #f5f7fa;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+/* 主标题单独设置大字号 */
+.main-title {
+  font-size: 22px;  /* 标题字号，手机上看醒目不拥挤 */
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* 正文所有普通文字统一字号 */
+.article-content p {
+  font-size: 16px;  /* 正文常规字号，手机阅读不累眼 */
+  line-height: 1.75; /* 行间距配合字号更透气 */
+  color: #333;
+}
+
+/* 小标题字号，比正文大一级做区分 */
+.article-content h2 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+}
+
+/* 重点内容的小字备注 */
+.article-content .tip-text {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* 导航栏样式 */
+.navbar {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  background-color: #3a5a40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.logo {
+  color: #e76f51;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: #f1faee;
+  font-size: 2.8rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #e76f51;
+}
+
+/* 横幅样式 */
+.banner {
+  width: 100%;
+  padding: 12rem 4rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 5.2rem;
+  margin-bottom: 2rem;
+}
+
+.banner p {
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  opacity: 0.9;
+}
+
+.banner-btn {
+  padding: 2.4rem 6rem;
+  font-size: 3rem;
+  border: none;
+  border-radius: 5rem;
+  background-color: #e76f51;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.banner-btn:hover {
+  transform: scale(1.05);
+}
+.join-btn {
+  display: inline-block;
+  margin: 20px 0 30px;
+  padding: 10px 30px;
+  background: #16a34a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(22,163,74,0.3);
+}
+.join-btn:hover {
+  background: #15803d;
+}
+/* 板块标题样式 */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem 2rem;
+}
+
+.title-line {
+  width: 0.8rem;
+  height: 4rem;
+  background-color: #e76f51;
+  border-radius: 1rem;
+}
+
+.section-title h2 {
+  font-size: 3.6rem;
+  color: #222;
+}
+
+/* 资讯卡片样式 */
+.news-card {
+  margin: 2rem;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s;
+}
+
+.news-card:hover {
+  box-shadow: 0 0.6rem 2rem rgba(0,0,0,0.1);
+}
+
+.news-card h3 a {
+  font-size: 3.2rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.news-meta {
+  font-size: 2.4rem;
+  color: #999;
+  margin: 1.5rem 0;
+}
+
+.news-desc {
+  font-size: 2.8rem;
+  color: #666;
+}
+
+/* 大屏端适配规则 */
+@media (min-width: 750px) {
+  html {
+    font-size: 18px;
+  }
+  body {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+    }
