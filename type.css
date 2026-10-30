@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.page-title {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #409eff;
+}
+.article-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+.article-item:hover {
+    padding-left: 10px;
+    background-color: #f8f9fa;
+}
+.article-title {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+.article-title:hover {
+    color: #409eff;
+}
+.article-meta {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.article-desc {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
